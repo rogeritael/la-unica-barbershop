@@ -9,16 +9,16 @@ const horarios = ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00",
 
 export function Calendar(){
     const [calendar, setCalendar] = useState([]);
-    const [selectedDay, setSelectedDay] = useState();
+    const [selectedDay, setSelectedDay] = useState([]);
 
     function getDays(){
-        let array = [];
+        let days: any = [];
 
         for(let i = 1; i <= lastDay; i++){
-            array.push(i);
+            days.push(i);
         }
 
-        setCalendar(array);
+        setCalendar(days);
     }
 
     //gera o array com o numero de dias no mês
@@ -26,7 +26,7 @@ export function Calendar(){
         getDays();
     }, []);
 
-    function handleSetSelectedDay(day: Number){
+    function handleSetSelectedDay(day: any){
         if(day >= currentDay){
             setSelectedDay(day);
         }
