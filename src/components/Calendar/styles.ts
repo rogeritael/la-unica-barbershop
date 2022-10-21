@@ -55,10 +55,23 @@ export const Container = styled.section`
         }
     }
 
-    
-
     button {
         height: 40px;
         margin-top: 1rem;
+    }
+
+    @media (max-width: 725px){
+        
+        
+
+        .calendar-container {
+            width: 100%;
+            
+            .dayCard {
+                width: 9%;
+                margin: 0.5%;
+            }
+        }
+        
     }
 `;

@@ -4,9 +4,9 @@ export const Container = styled.section`
     margin: 3rem 0;
 
     figure {
-        width: 80%;
+        width: 100%;
         aspect-ratio: 5/2.5;
-        border-radius: 2rem 2rem 2rem 5rem;
+        /* border-radius: 2rem 2rem 2rem 5rem; */
         overflow: hidden;
         position: relative;
         margin: 0 auto;
