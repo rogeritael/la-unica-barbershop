@@ -12,4 +12,10 @@ export const Container = styled.footer`
     span {
         font-weight: bold;
     }
+
+    @media (max-width: 600px){
+        height: 80px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
 `;

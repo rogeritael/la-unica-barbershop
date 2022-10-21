@@ -43,7 +43,7 @@ export const Container = styled.section`
 
             h1 {
                 font-size: 4rem;
-                width: 700px;
+                max-width: 700px;
                 line-height: 4rem;
                 text-transform: uppercase;
             }
@@ -54,13 +54,15 @@ export const Container = styled.section`
         margin-top: 1rem;
     }
 
-    @media (max-width: 1024px){
+    @media (max-width: 725px){
         figure {
             width: 100%;
+            aspect-ratio: 5/3;
             border-radius: 0;
 
             .cover-text h1 {
-                font-size: 1rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
             }
         }
     } 

@@ -11,7 +11,7 @@ export const Container = styled.h1`
     &::before, &::after {
         content: "";
         height: 5px;
-        /* width: 5px; */
+        width: 100px;
         background-color: var(--dark-yellow);
         position: absolute;
         bottom: 50%;
@@ -21,11 +21,11 @@ export const Container = styled.h1`
     }
 
     &::before {
-        left: -110px;
+        left: -120px;
     }
 
     &::after {
-        right: -110px;
+        right: -120px;
     }
 
     
@@ -39,6 +39,12 @@ export const Container = styled.h1`
         }
     }
 
+    
+    @media (max-width: 625px){
+        &::before, &::after {
+            width: 0;
+        }
+    }
     
     @media (max-width: 425px){
         font-size: 1.5rem;

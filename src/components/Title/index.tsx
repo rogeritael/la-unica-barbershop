@@ -2,7 +2,7 @@ import { Container } from "./styles";
 
 export function Title({ text }: {text: string}){
     return(
-        <Container>
+        <Container data-aos="fade-left">
             {text}
         </Container>
     );
