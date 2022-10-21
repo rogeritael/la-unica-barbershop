@@ -54,15 +54,30 @@ export const Container = styled.section`
         margin-top: 1rem;
     }
 
+    @media (max-width: 1125px){
+        .cover-text{
+            width: 90%;
+            text-align: center;
+            /* border: 1px solid red; */
+
+            h1 {
+                margin: 0 auto;
+            }
+        }
+    }
+
+
     @media (max-width: 725px){
         figure {
             width: 100%;
             aspect-ratio: 5/3;
             border-radius: 0;
 
-            .cover-text h1 {
-                font-size: 1.5rem;
-                line-height: 2rem;
+            .cover-text{
+                h1 {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
             }
         }
     } 

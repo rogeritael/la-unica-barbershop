@@ -24,7 +24,7 @@ const services = [{
 
 export function ServicesContainer(){
     return(
-        <Container data-aos="fade-up">
+        <Container data-aos="fade-up" id="services">
             {services.map(service => (
                 <div className="card" key="" data-aos="zoom-in">
                     {service.icon}

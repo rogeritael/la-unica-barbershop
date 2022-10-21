@@ -1,7 +1,6 @@
 import { Container } from "./styles";
 import Link from "next/link";
 import Image from "next/image";
-import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { Button } from "../Button";
 import { Socials } from "../Socials";
 
@@ -14,19 +13,19 @@ const links = {
 const menu = [
     {
         title: "serviços",
-        link: "/"
+        link: "#services"
     },
     {
-        title: "fotos",
-        link: "/"
+        title: "portifólio",
+        link: "#portifolio"
     },
     {
-        title: "contato",
-        link: "/"
+        title: "agende um horário",
+        link: "#calendar"
     },
     {
-        title: "mapa",
-        link: "/"
+        title: "onde estamos",
+        link: "#map"
     },
 ]
 
