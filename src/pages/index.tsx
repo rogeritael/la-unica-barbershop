@@ -22,13 +22,13 @@ const Home: NextPage = () => {
     <AppContainer>
       <Header />
       <Cover />
-      <Title text="Serviços" />
+      <Title text="Serviços" id="services"/>
       <ServicesContainer/>
-      <Title text="Nosso portifólio" />
+      <Title text="Nosso portifólio" id="portifolio"/>
       <Photos />
-      <Title text="Agende um horário" />
+      <Title text="Agende um horário" id="calendar"/>
       <Calendar />
-      <Title text="Nos encontre" />
+      <Title text="Nos encontre" id="map"/>
       <Map />
       <Footer />
     </AppContainer>

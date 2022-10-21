@@ -65,19 +65,34 @@ export const Container = styled.header`
     }
 
     //responsivo
-    @media (max-width: 750px){
+    @media (max-width: 768px){
+        .bottom-header {
+            p {
+                display: none;
+            }
+
+            ul {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (max-width: 550px){
 
         .bottom-header{
             p {
                 display: none;
             }
-            justify-content: center;
 
             ul li {
-                margin: 0 1rem;
+                margin: 0 .5rem;
             }
         }
-        /* background-color: red; */
     }
 
+
+    //botão responsivo
+    @media (max-width: 460px){
+        
+    }
 `;

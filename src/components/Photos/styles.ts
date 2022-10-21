@@ -51,6 +51,10 @@ export const Container = styled.section`
 
         figure.main {
             width: 90%;
+            height: 90%;
+            aspect-ratio: 1 / 1;
+            /* height: 10rem; */
+            background-color: red;
         }
 
         .images-container {

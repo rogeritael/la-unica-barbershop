@@ -34,7 +34,7 @@ export function Calendar(){
 
 
     return(
-        <Container data-aos="fade-up" id="calendar">
+        <Container data-aos="fade-up">
             <div className="calendar-container">
                 {
                     calendar.map((day) => (

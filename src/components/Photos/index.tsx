@@ -32,7 +32,7 @@ export function Photos(){
 
 
     return(
-        <Container data-aos="fade-up" id="portifolio">
+        <Container data-aos="fade-up">
             <figure className="main">
                 <Image
                     src={mainImage}
