@@ -14,7 +14,7 @@ export function Cover(){
                 />
                 <div className="cover-text">
                     <h1>Quem tem estilo, merece estilo. Venha ser único.</h1>
-                    <Button />
+                    <Button text="Agendar horário" link=""/>
                 </div>
             </figure>
         </Container>

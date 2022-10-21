@@ -53,7 +53,7 @@ export function Calendar(){
                     ))} 
                 </select>
             </div>
-            <Button />
+            <Button text="Verificar disponibilidade" link=""/>
         </Container>
     );
 }

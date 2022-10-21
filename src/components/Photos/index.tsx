@@ -2,6 +2,7 @@ import { Container } from "./styles";
 import Image from "next/image";
 import { useState } from "react";
 import { Title } from "../Title";
+import { Button } from "../Button";
 
 
 const gallery = [{
@@ -54,7 +55,7 @@ export function Photos(){
                     </figure>
                 ))}
             </div>
-
+            <Button text="Ver mais" link=""/>
         </Container>
     );
 }

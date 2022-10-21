@@ -43,7 +43,7 @@ export function Header(){
                     />
                 </figure>
                 
-                <Button />
+                <Button text="Reserva" link=""/>
             </div>
             
             <div className="bottom-header">

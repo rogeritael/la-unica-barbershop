@@ -1,9 +1,17 @@
+import Link from "next/link";
 import { Container } from "./styles";
 
-export function Button(){
+interface ButtonProps {
+    text: string,
+    link: string
+}
+
+export function Button({ text, link }: ButtonProps ){
     return(
         <Container>
-            Reserva
+            <Link href={link}>
+                {text}
+            </Link>
         </Container>
     );
 }

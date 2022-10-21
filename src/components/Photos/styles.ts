@@ -4,6 +4,8 @@ export const Container = styled.section`
     width: 80%;
     margin: 2rem auto;
 
+    text-align: center;
+
     figure {
         overflow: hidden;
 
