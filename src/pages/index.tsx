@@ -11,6 +11,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 import { Title } from '../components/Title';
+import { AppContainer } from '../components/AppContainer';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div>
+    <AppContainer>
       <Header />
       <Cover />
       <Title text="Serviços" />
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
       <Title text="Nos encontre" />
       <Map />
       <Footer />
-    </div>
+    </AppContainer>
   )
 }
 

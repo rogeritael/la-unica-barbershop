@@ -38,4 +38,9 @@ export const Container = styled.h1`
             left: -140px;
         }
     }
+
+    
+    @media (max-width: 425px){
+        font-size: 1.5rem;
+    }
 `;
