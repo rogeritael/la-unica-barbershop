@@ -41,10 +41,6 @@ export const Container = styled.section`
             color: #fff;
             text-align: center;
 
-            p {
-                margin-bottom: 1rem;
-            }
-
             h1 {
                 font-size: 4rem;
                 width: 700px;
@@ -57,4 +53,15 @@ export const Container = styled.section`
     button {
         margin-top: 1rem;
     }
+
+    @media (max-width: 1024px){
+        figure {
+            width: 100%;
+            border-radius: 0;
+
+            .cover-text h1 {
+                font-size: 1rem;
+            }
+        }
+    } 
 `;

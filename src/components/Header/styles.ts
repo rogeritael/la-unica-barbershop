@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
     .top-header, .bottom-header {
-        width: 100%;
+        width: 100vw;
         padding: 0 1rem;
         display: flex;
         justify-content: space-between;
@@ -62,6 +62,22 @@ export const Container = styled.header`
                 }
             }
         }
+    }
+
+    //responsivo
+    @media (max-width: 750px){
+
+        .bottom-header{
+            p {
+                display: none;
+            }
+            justify-content: center;
+
+            ul li {
+                margin: 0 1rem;
+            }
+        }
+        /* background-color: red; */
     }
 
 `;

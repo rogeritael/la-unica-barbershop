@@ -44,4 +44,25 @@ export const Container = styled.section`
     .selected-image {
         border: 4px solid var(--dark-yellow);
     }
+
+
+    @media (max-width: 720px){
+        width: 100%;
+
+        figure.main {
+            width: 90%;
+        }
+
+        .images-container {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        figure.image-single {
+            width: 20%;
+            /* margin: 1px; */
+            /* margin: calc(20% / 4); */
+        }
+    }
 `;

@@ -11,7 +11,7 @@ export const Container = styled.h1`
     &::before, &::after {
         content: "";
         height: 5px;
-        width: 100px;
+        /* width: 5px; */
         background-color: var(--dark-yellow);
         position: absolute;
         bottom: 50%;

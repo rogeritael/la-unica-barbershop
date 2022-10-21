@@ -14,7 +14,6 @@ export function Cover(){
                 />
                 <div className="cover-text">
                     <h1>Quem tem estilo, merece estilo. Venha ser único.</h1>
-                    {/* <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p> */}
                     <Button />
                 </div>
             </figure>

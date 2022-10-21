@@ -38,4 +38,15 @@ export const Container = styled.section`
             font-size: 1.25rem;
         }
     }
+
+    @media (max-width: 900px){
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        div.card {
+            width: 12rem;
+            margin: 1rem;
+            aspect-ratio: 1/1;
+        }
+    }
 `;
