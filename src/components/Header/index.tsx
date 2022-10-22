@@ -58,7 +58,7 @@ export function Header(){
                 
 
                 <GoThreeBars className="menuBar" onClick={() => handleClickMenu()}/>
-                <Button text="Reserva" link=""/>
+                <Button text="Reserva" link="#calendar"/>
             </div>
             
             <div className="bottom-header">

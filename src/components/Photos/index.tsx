@@ -55,7 +55,7 @@ export function Photos(){
                     </figure>
                 ))}
             </div>
-            <Button text="Ver mais" link=""/>
+            <Button text="Ver mais" link="https://www.instagram.com/launicabarbershop_"/>
         </Container>
     );
 }

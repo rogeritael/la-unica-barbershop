@@ -25,7 +25,7 @@ export const Container = styled.header`
 
         .menuBar {
             color: var(--dark-yellow);
-            font-size: 1.5rem;
+            font-size: 2rem;
             display: none;
         }
     }

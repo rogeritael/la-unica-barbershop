@@ -10,12 +10,9 @@ export const Container = styled.button`
     cursor: pointer;
     transition: 500ms;
     text-transform: uppercase;
-
-    a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 
     &:hover {
         transform: scale(1.1);

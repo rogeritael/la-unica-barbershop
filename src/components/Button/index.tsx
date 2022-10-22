@@ -8,10 +8,10 @@ interface ButtonProps {
 
 export function Button({ text, link }: ButtonProps ){
     return(
-        <Container>
-            <Link href={link}>
+        <Link href={link}>
+            <Container>
                 {text}
-            </Link>
-        </Container>
+            </Container>
+        </Link>
     );
 }

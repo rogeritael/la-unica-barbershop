@@ -2,14 +2,22 @@ import { useState, useEffect } from "react";
 import { Button } from "../Button";
 import { Container } from "./styles";
 
-const date = new Date();
-const currentDay = date.getDate();
-const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-const horarios = ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"];
 
 export function Calendar(){
     const [calendar, setCalendar] = useState([]);
-    const [selectedDay, setSelectedDay] = useState([]);
+    const [hour, setHour] = useState("08:00");
+    const date = new Date();
+    const currentDay = date.getDate();
+    const [selectedDay, setSelectedDay] = useState(currentDay);
+    const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+    const horarios = ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"];
+    //mensagem personalizada 
+    const message = `https://api.whatsapp.com/send?phone=5547992440796&text=Olá,%20tem%20horário%20disponivel%20para%20o%20dia%20${selectedDay}%20às%20${hour}%20horas?%20`
+
+    function handleSelect(e: React.ChangeEvent<HTMLInputElement>){
+        setHour(e.target.value);
+    }
+
 
     function getDays(){
         let days: any = [];
@@ -47,13 +55,13 @@ export function Calendar(){
                         </div>
                     ))
                 }
-                <select>
+                <select onChange={(e) => handleSelect(e)}>
                     {horarios.map((horario) => (
                         <option key={horario} value={horario}>{horario}</option>
                     ))} 
                 </select>
             </div>
-            <Button text="Verificar disponibilidade" link=""/>
+            <Button text="Verificar disponibilidade" link={message}/>
         </Container>
     );
 }
