@@ -22,6 +22,12 @@ export const Container = styled.header`
                 color: #fff;
             }
         }
+
+        .menuBar {
+            color: #fff;
+            font-size: 1.5rem;
+            display: none;
+        }
     }
 
     .bottom-header {
@@ -63,7 +69,7 @@ export const Container = styled.header`
             }
         }
     }
-
+    
     //responsivo
     @media (max-width: 768px){
         .bottom-header {
@@ -93,6 +99,22 @@ export const Container = styled.header`
 
     //botão responsivo
     @media (max-width: 460px){
-        
+        .top-header {
+            button {
+                display: none;
+            }
+
+            .socials {
+                display: none;
+            }
+
+            .menuBar {
+                display: block;
+            }
+        }
+
+        .bottom-header {
+            display: none;
+        }
     }
 `;

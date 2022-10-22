@@ -12,6 +12,8 @@ import 'aos/dist/aos.css'
 
 import { Title } from '../components/Title';
 import { AppContainer } from '../components/AppContainer';
+import { Mobile } from '../components/Mobile';
+import { MenuProvider } from '../context/MenuContext';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -20,7 +22,10 @@ const Home: NextPage = () => {
 
   return (
     <AppContainer>
-      <Header />
+      <MenuProvider>
+        <Mobile />
+        <Header />
+      </MenuProvider>
       <Cover />
       <Title text="Serviços" id="services"/>
       <ServicesContainer/>

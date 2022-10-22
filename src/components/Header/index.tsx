@@ -3,6 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../Button";
 import { Socials } from "../Socials";
+import { GoThreeBars } from "react-icons/go"; 
+import { AiFillCloseSquare } from "react-icons/ai"; 
+import { Context } from "../../context/MenuContext";
+import { useContext } from "react";
+
 
 const links = {
     instagram: "https://www.instagram.com/launicabarbershop_/?utm_medium=copy_link",
@@ -30,6 +35,12 @@ const menu = [
 ]
 
 export function Header(){
+    const {setIsMenuOpen} = useContext<any>(Context);
+
+    function handleClickMenu(){
+        setIsMenuOpen(true);
+    }
+
     return(
         <Container>
             <div className="top-header">
@@ -43,6 +54,8 @@ export function Header(){
                     />
                 </figure>
                 
+
+                <GoThreeBars className="menuBar" onClick={() => handleClickMenu()}/>
                 <Button text="Reserva" link=""/>
             </div>
             

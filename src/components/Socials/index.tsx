@@ -9,7 +9,7 @@ const links = {
 
 export function Socials(){
     return(
-        <Container>
+        <Container className="socials">
             <Link href={links.instagram}><BsInstagram/></Link>
             <Link href={links.whatsapp}><BsWhatsapp/></Link>
         </Container>
