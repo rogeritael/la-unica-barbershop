@@ -46,12 +46,14 @@ export function Header(){
             <div className="top-header">
                 <Socials />
                 <figure className="logo">
+                    <Link href="/">
                     <Image
                         src={links.logoImg}
                         alt="la única logo"
                         layout="fill"
                         objectFit="contain"
                     />
+                    </Link>
                 </figure>
                 
 

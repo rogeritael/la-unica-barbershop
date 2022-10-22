@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     Aos.init({ duration: 1500 });
   }, [])
 
-  return (
+  return (<>
     <AppContainer>
       <MenuProvider>
         <Mobile />
@@ -37,6 +37,7 @@ const Home: NextPage = () => {
       <Map />
       <Footer />
     </AppContainer>
+    </>
   )
 }
 

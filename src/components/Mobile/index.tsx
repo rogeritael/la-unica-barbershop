@@ -7,10 +7,30 @@ import { Context } from "../../context/MenuContext";
 import { MenuProvider } from "../../context/MenuContext";
 
 export function Mobile(){
-    const {isMenuOpen, setIsMenuOpen } = useContext<any>(Context);
+    const { isMenuOpen, setIsMenuOpen } = useContext<any>(Context);
+
+    const menu = [
+        {
+            title: "serviços",
+            link: "#services"
+        },
+        {
+            title: "portifólio",
+            link: "#portifolio"
+        },
+        {
+            title: "agende um horário",
+            link: "#calendar"
+        },
+        {
+            title: "onde estamos",
+            link: "#map"
+        },
+    ]
 
     function handleClick(){
         setIsMenuOpen(false);
+
     }
 
     return(
@@ -18,10 +38,11 @@ export function Mobile(){
             <AiOutlineClose onClick={() => handleClick()}/>
 
             <ul>
-                <Link href="/"><li>Item 1</li></Link>
-                <Link href="/"><li>Item 2</li></Link>
-                <Link href="/"><li>Item 3</li></Link>
-                <Link href="/"><li>Item 4</li></Link>
+                {menu.map((menuItem) => (
+                    <Link href={menuItem.link} key={menuItem.title}>
+                        <li onClick={() => handleClick()}>{menuItem.title}</li>
+                    </Link>
+                ))}
             </ul>
         </Container>
     );
