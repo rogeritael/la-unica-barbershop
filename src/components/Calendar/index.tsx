@@ -12,12 +12,7 @@ export function Calendar(){
     const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
     const horarios = ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"];
     //mensagem personalizada 
-    const message = `https://api.whatsapp.com/send?phone=5547992440796&text=Olá,%20tem%20horário%20disponivel%20para%20o%20dia%20${selectedDay}%20às%20${hour}%20horas?%20`
-
-    function handleSelect(e: React.ChangeEvent<HTMLInputElement>){
-        setHour(e.target.value);
-    }
-
+    const message = `https://api.whatsapp.com/send?phone=5547992440796&text=Olá,%20tem%20horário%20disponivel%20para%20o%20dia%20${selectedDay}%20às%20${hour}%20horas?%20`;
 
     function getDays(){
         let days: any = [];
@@ -32,7 +27,7 @@ export function Calendar(){
     //gera o array com o numero de dias no mês
     useEffect(() => {
         getDays();
-    }, []);
+    });
 
     function handleSetSelectedDay(day: any){
         if(day >= currentDay){
@@ -55,7 +50,7 @@ export function Calendar(){
                         </div>
                     ))
                 }
-                <select onChange={(e) => handleSelect(e)}>
+                <select onChange={(e) => setHour(e.target.value)}>
                     {horarios.map((horario) => (
                         <option key={horario} value={horario}>{horario}</option>
                     ))} 
